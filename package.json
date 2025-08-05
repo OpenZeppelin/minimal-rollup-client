@@ -1,9 +1,0 @@
-{
-  "name": "taiko-mono",
-  "version": "0.23.0",
-  "private": true,
-  "devDependencies": {
-    "lefthook": "^1.6.10",
-    "prettier": "^3.2.5"
-  }
-}
