@@ -1,3 +1,0 @@
-replace json.RawMessage string
-replace sql.NullInt64 uint64
-replace sql.NullInt16 uint16
