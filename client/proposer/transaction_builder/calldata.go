@@ -10,11 +10,11 @@ import (
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/crypto"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/encoding"
-	pacayaBindings "github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/pacaya"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/config"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/utils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/encoding"
+	pacayaBindings "github.com/OpenZeppelin/minimal-rollup-client/client/bindings/pacaya"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/config"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/utils"
 )
 
 // CalldataTransactionBuilder is responsible for building a TaikoInbox.proposeBatch transaction with txList

@@ -5,8 +5,8 @@ import (
 
 	"github.com/ethereum-optimism/optimism/op-service/eth"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/internal/testutils"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/preconf"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/internal/testutils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/preconf"
 )
 
 func (s *PreconfBlockAPIServerTestSuite) TestCacheGet() {

@@ -19,11 +19,11 @@ import (
 	"github.com/ethereum/go-ethereum/rlp"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/encoding"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/metadata"
-	anchorTxConstructor "github.com/taikoxyz/taiko-mono/packages/taiko-client/driver/anchor_tx_constructor"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/utils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/encoding"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/metadata"
+	anchorTxConstructor "github.com/OpenZeppelin/minimal-rollup-client/client/driver/anchor_tx_constructor"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/utils"
 )
 
 // createPayloadAndSetHead tries to insert a new head block to the L2 execution engine's local

@@ -14,9 +14,9 @@ import (
 	"github.com/prysmaticlabs/prysm/v5/io/file"
 	"github.com/urfave/cli/v2"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/cmd/flags"
-	pkgFlags "github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/flags"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/utils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/cmd/flags"
+	pkgFlags "github.com/OpenZeppelin/minimal-rollup-client/client/pkg/flags"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/utils"
 )
 
 // Config contains the configurations to initialize a Taiko prover.

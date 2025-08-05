@@ -7,10 +7,10 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/metadata"
-	pacayaBindings "github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/pacaya"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/internal/testutils"
-	producer "github.com/taikoxyz/taiko-mono/packages/taiko-client/prover/proof_producer"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/metadata"
+	pacayaBindings "github.com/OpenZeppelin/minimal-rollup-client/client/bindings/pacaya"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/internal/testutils"
+	producer "github.com/OpenZeppelin/minimal-rollup-client/client/prover/proof_producer"
 )
 
 func (s *TransactionTestSuite) TestBuildTxs() {

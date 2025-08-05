@@ -12,7 +12,7 @@ import (
 	"github.com/go-resty/resty/v2"
 	"github.com/prysmaticlabs/prysm/v5/api/server/structs"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg"
 )
 
 type BlobDataSource struct {

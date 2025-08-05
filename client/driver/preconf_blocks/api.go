@@ -18,11 +18,11 @@ import (
 	"github.com/labstack/echo/v4"
 	"github.com/modern-go/reflect2"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/encoding"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/internal/metrics"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/preconf"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/utils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/encoding"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/internal/metrics"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/preconf"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/utils"
 )
 
 // ExecutableData is the data necessary to execute an EL payload.

@@ -14,12 +14,12 @@ import (
 	"github.com/ethereum/go-ethereum/params"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/encoding"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/pacaya"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/internal/metrics"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/config"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/utils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/encoding"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/pacaya"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/internal/metrics"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/config"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/utils"
 )
 
 // TxBuilderWithFallback builds type-2 or type-3 transactions based on the

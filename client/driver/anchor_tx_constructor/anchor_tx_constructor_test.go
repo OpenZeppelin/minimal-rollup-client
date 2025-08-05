@@ -12,8 +12,8 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/stretchr/testify/require"
 
-	pacayaBindings "github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/pacaya"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
+	pacayaBindings "github.com/OpenZeppelin/minimal-rollup-client/client/bindings/pacaya"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
 )
 
 func TestGasLimit(t *testing.T) {

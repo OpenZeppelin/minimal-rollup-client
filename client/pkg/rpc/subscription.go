@@ -8,7 +8,7 @@ import (
 	"github.com/ethereum/go-ethereum/event"
 	"github.com/ethereum/go-ethereum/log"
 
-	pacayaBindings "github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/pacaya"
+	pacayaBindings "github.com/OpenZeppelin/minimal-rollup-client/client/bindings/pacaya"
 )
 
 // SubscribeEvent creates a event subscription, will retry if the established subscription failed.

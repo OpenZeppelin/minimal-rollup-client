@@ -11,18 +11,18 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/encoding"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/metadata"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/driver/chain_syncer/beaconsync"
-	blocksInserter "github.com/taikoxyz/taiko-mono/packages/taiko-client/driver/chain_syncer/event/blocks_inserter"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/driver/state"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/internal/metrics"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/encoding"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/metadata"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/driver/chain_syncer/beaconsync"
+	blocksInserter "github.com/OpenZeppelin/minimal-rollup-client/client/driver/chain_syncer/event/blocks_inserter"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/driver/state"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/internal/metrics"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
 
-	anchorTxConstructor "github.com/taikoxyz/taiko-mono/packages/taiko-client/driver/anchor_tx_constructor"
-	txListDecompressor "github.com/taikoxyz/taiko-mono/packages/taiko-client/driver/txlist_decompressor"
-	txlistFetcher "github.com/taikoxyz/taiko-mono/packages/taiko-client/driver/txlist_fetcher"
-	eventIterator "github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/chain_iterator/event_iterator"
+	anchorTxConstructor "github.com/OpenZeppelin/minimal-rollup-client/client/driver/anchor_tx_constructor"
+	txListDecompressor "github.com/OpenZeppelin/minimal-rollup-client/client/driver/txlist_decompressor"
+	txlistFetcher "github.com/OpenZeppelin/minimal-rollup-client/client/driver/txlist_fetcher"
+	eventIterator "github.com/OpenZeppelin/minimal-rollup-client/client/pkg/chain_iterator/event_iterator"
 )
 
 // Syncer responsible for letting the L2 execution engine catching up with protocol's latest

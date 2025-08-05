@@ -12,11 +12,11 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/driver/state"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/internal/testutils"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/jwt"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/proposer"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/driver/state"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/internal/testutils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/jwt"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/proposer"
 )
 
 type ChainSyncerTestSuite struct {

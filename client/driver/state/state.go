@@ -12,9 +12,9 @@ import (
 	"github.com/ethereum/go-ethereum/event"
 	"github.com/ethereum/go-ethereum/log"
 
-	pacayaBindings "github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/pacaya"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/internal/metrics"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
+	pacayaBindings "github.com/OpenZeppelin/minimal-rollup-client/client/bindings/pacaya"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/internal/metrics"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
 )
 
 // State contains all states which will be used by driver.

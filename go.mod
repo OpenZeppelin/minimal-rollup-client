@@ -1,4 +1,4 @@
-module github.com/taikoxyz/taiko-mono
+module github.com/OpenZeppelin/minimal-rollup-client
 
 go 1.23.5
 

@@ -11,9 +11,9 @@ import (
 	"github.com/ethereum/go-ethereum/crypto/kzg4844"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/metadata"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/metadata"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
 )
 
 // BlobFetcher is responsible for fetching the txList blob from the L1 block sidecar.

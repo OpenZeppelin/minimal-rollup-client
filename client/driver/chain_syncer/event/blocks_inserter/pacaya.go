@@ -17,17 +17,17 @@ import (
 	"github.com/ethereum/go-ethereum/miner"
 	"github.com/holiman/uint256"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/encoding"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/metadata"
-	anchorTxConstructor "github.com/taikoxyz/taiko-mono/packages/taiko-client/driver/anchor_tx_constructor"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/driver/chain_syncer/beaconsync"
-	txListDecompressor "github.com/taikoxyz/taiko-mono/packages/taiko-client/driver/txlist_decompressor"
-	txlistFetcher "github.com/taikoxyz/taiko-mono/packages/taiko-client/driver/txlist_fetcher"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/internal/metrics"
-	eventIterator "github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/chain_iterator/event_iterator"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/preconf"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/utils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/encoding"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/metadata"
+	anchorTxConstructor "github.com/OpenZeppelin/minimal-rollup-client/client/driver/anchor_tx_constructor"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/driver/chain_syncer/beaconsync"
+	txListDecompressor "github.com/OpenZeppelin/minimal-rollup-client/client/driver/txlist_decompressor"
+	txlistFetcher "github.com/OpenZeppelin/minimal-rollup-client/client/driver/txlist_fetcher"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/internal/metrics"
+	eventIterator "github.com/OpenZeppelin/minimal-rollup-client/client/pkg/chain_iterator/event_iterator"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/preconf"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/utils"
 )
 
 // BlocksInserterPacaya is responsible for inserting Pacaya blocks to the L2 execution engine.

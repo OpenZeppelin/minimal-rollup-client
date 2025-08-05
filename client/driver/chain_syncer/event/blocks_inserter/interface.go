@@ -8,9 +8,9 @@ import (
 	"github.com/ethereum/go-ethereum/core/rawdb"
 	"github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/metadata"
-	pacayaBindings "github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/pacaya"
-	eventIterator "github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/chain_iterator/event_iterator"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/metadata"
+	pacayaBindings "github.com/OpenZeppelin/minimal-rollup-client/client/bindings/pacaya"
+	eventIterator "github.com/OpenZeppelin/minimal-rollup-client/client/pkg/chain_iterator/event_iterator"
 )
 
 // Inserter is an interface that defines the method to insert blocks to the L2 execution engine.

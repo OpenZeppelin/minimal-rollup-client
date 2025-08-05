@@ -6,7 +6,7 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/cmd/utils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/cmd/utils"
 )
 
 type ChainSyncer interface {

@@ -11,8 +11,8 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/metadata"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/metadata"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
 )
 
 // RaikoBatches represents the JSON body of RaikoRequestProofBodyV3Pacaya's `Batches` field.

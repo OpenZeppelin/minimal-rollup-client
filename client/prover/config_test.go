@@ -3,7 +3,7 @@ package prover
 import (
 	"github.com/urfave/cli/v2"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/cmd/flags"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/cmd/flags"
 )
 
 func (s *ProverTestSuite) TestNewConfigFromCliContextProverKeyError() {

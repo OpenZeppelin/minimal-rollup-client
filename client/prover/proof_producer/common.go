@@ -11,7 +11,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/internal/metrics"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/internal/metrics"
 )
 
 // RaikoRequestProofBodyResponseV2 represents the JSON body of the response of the proof requests.

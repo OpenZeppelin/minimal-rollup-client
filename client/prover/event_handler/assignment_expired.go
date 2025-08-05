@@ -6,9 +6,9 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/metadata"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
-	proofProducer "github.com/taikoxyz/taiko-mono/packages/taiko-client/prover/proof_producer"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/metadata"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
+	proofProducer "github.com/OpenZeppelin/minimal-rollup-client/client/prover/proof_producer"
 )
 
 // AssignmentExpiredEventHandler is responsible for handling the expiration of proof assignments.

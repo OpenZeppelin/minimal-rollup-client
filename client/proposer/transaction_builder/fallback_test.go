@@ -14,9 +14,9 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/ethereum/go-ethereum/params"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/internal/metrics"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/config"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/utils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/internal/metrics"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/config"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/utils"
 )
 
 func (s *TransactionBuilderTestSuite) TestBuildCalldataOnly() {

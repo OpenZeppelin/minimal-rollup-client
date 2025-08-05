@@ -10,8 +10,8 @@ import (
 	"github.com/prometheus/client_golang/prometheus"
 	"github.com/urfave/cli/v2"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/cmd/flags"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/cmd/flags"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
 )
 
 // Metrics

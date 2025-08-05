@@ -16,8 +16,8 @@ import (
 	"github.com/holiman/uint256"
 	"github.com/libp2p/go-libp2p/core/peer"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/utils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/utils"
 )
 
 // blockToEnvelope converts a block to an ExecutionPayloadEnvelope.

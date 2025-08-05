@@ -12,8 +12,8 @@ import (
 	p2pFlags "github.com/ethereum-optimism/optimism/op-node/flags"
 	"github.com/ethereum-optimism/optimism/op-node/p2p"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/cmd/flags"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/internal/testutils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/cmd/flags"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/internal/testutils"
 )
 
 var (

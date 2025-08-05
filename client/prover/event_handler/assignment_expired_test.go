@@ -5,7 +5,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	proofProducer "github.com/taikoxyz/taiko-mono/packages/taiko-client/prover/proof_producer"
+	proofProducer "github.com/OpenZeppelin/minimal-rollup-client/client/prover/proof_producer"
 )
 
 func (s *EventHandlerTestSuite) TestAssignmentExpiredEventHandlerHandle() {

@@ -8,7 +8,7 @@ import (
 
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/metadata"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/metadata"
 )
 
 var (

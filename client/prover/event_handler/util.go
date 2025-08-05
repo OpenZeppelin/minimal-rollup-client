@@ -9,10 +9,10 @@ import (
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/metadata"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/pacaya"
-	eventIterator "github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/chain_iterator/event_iterator"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/metadata"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/pacaya"
+	eventIterator "github.com/OpenZeppelin/minimal-rollup-client/client/pkg/chain_iterator/event_iterator"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
 )
 
 // isBatchVerified checks whether the given L2 block has been verified.

@@ -12,16 +12,16 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/stretchr/testify/suite"
 
-	pacayaBindings "github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/pacaya"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/driver"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/driver/chain_syncer/beaconsync"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/driver/chain_syncer/event"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/driver/state"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/internal/testutils"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/jwt"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/proposer"
-	proofProducer "github.com/taikoxyz/taiko-mono/packages/taiko-client/prover/proof_producer"
+	pacayaBindings "github.com/OpenZeppelin/minimal-rollup-client/client/bindings/pacaya"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/driver"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/driver/chain_syncer/beaconsync"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/driver/chain_syncer/event"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/driver/state"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/internal/testutils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/jwt"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/proposer"
+	proofProducer "github.com/OpenZeppelin/minimal-rollup-client/client/prover/proof_producer"
 )
 
 type EventHandlerTestSuite struct {

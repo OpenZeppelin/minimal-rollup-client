@@ -9,8 +9,8 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/urfave/cli/v2"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/cmd/logger"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/internal/metrics"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/cmd/logger"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/internal/metrics"
 )
 
 type SubcommandApplication interface {

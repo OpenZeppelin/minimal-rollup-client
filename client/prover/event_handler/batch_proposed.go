@@ -12,13 +12,13 @@ import (
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/encoding"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/metadata"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/internal/metrics"
-	eventIterator "github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/chain_iterator/event_iterator"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
-	proofProducer "github.com/taikoxyz/taiko-mono/packages/taiko-client/prover/proof_producer"
-	state "github.com/taikoxyz/taiko-mono/packages/taiko-client/prover/shared_state"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/encoding"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/metadata"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/internal/metrics"
+	eventIterator "github.com/OpenZeppelin/minimal-rollup-client/client/pkg/chain_iterator/event_iterator"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
+	proofProducer "github.com/OpenZeppelin/minimal-rollup-client/client/prover/proof_producer"
+	state "github.com/OpenZeppelin/minimal-rollup-client/client/prover/shared_state"
 )
 
 var (

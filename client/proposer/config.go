@@ -11,11 +11,11 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/urfave/cli/v2"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/cmd/flags"
-	pkgFlags "github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/flags"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/jwt"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/utils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/cmd/flags"
+	pkgFlags "github.com/OpenZeppelin/minimal-rollup-client/client/pkg/flags"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/jwt"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/utils"
 )
 
 // Config contains all configurations to initialize a Taiko proposer.

@@ -7,7 +7,7 @@ import (
 	"github.com/ethereum-optimism/optimism/op-service/txmgr"
 	"github.com/ethereum/go-ethereum/common"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/encoding"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/encoding"
 )
 
 func (s *ProverTestSuite) TestSetApprovalAmount() {

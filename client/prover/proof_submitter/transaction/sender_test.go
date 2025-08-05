@@ -15,11 +15,11 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/metadata"
-	pacayaBindings "github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/pacaya"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/internal/testutils"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
-	producer "github.com/taikoxyz/taiko-mono/packages/taiko-client/prover/proof_producer"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/metadata"
+	pacayaBindings "github.com/OpenZeppelin/minimal-rollup-client/client/bindings/pacaya"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/internal/testutils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
+	producer "github.com/OpenZeppelin/minimal-rollup-client/client/prover/proof_producer"
 )
 
 type TransactionTestSuite struct {

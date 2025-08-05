@@ -10,7 +10,7 @@ import (
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/internal/testutils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/internal/testutils"
 )
 
 type BlockBatchIteratorTestSuite struct {

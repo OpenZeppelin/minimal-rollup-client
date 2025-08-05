@@ -16,7 +16,7 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	gethRPC "github.com/ethereum/go-ethereum/rpc"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
 )
 
 // MemoryBlobTxMgr is a mock tx manager that stores blobs in memory.

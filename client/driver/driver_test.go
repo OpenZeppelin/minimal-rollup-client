@@ -28,16 +28,16 @@ import (
 	"github.com/libp2p/go-libp2p/core/peer"
 	"github.com/stretchr/testify/suite"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/encoding"
-	pacayaBindings "github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/pacaya"
-	anchortxconstructor "github.com/taikoxyz/taiko-mono/packages/taiko-client/driver/anchor_tx_constructor"
-	preconfblocks "github.com/taikoxyz/taiko-mono/packages/taiko-client/driver/preconf_blocks"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/internal/testutils"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/jwt"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/preconf"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/utils"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/proposer"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/encoding"
+	pacayaBindings "github.com/OpenZeppelin/minimal-rollup-client/client/bindings/pacaya"
+	anchortxconstructor "github.com/OpenZeppelin/minimal-rollup-client/client/driver/anchor_tx_constructor"
+	preconfblocks "github.com/OpenZeppelin/minimal-rollup-client/client/driver/preconf_blocks"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/internal/testutils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/jwt"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/preconf"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/utils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/proposer"
 )
 
 type DriverTestSuite struct {

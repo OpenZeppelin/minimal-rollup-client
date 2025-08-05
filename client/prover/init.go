@@ -12,13 +12,13 @@ import (
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/log"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/encoding"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/rpc"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/pkg/utils"
-	handler "github.com/taikoxyz/taiko-mono/packages/taiko-client/prover/event_handler"
-	producer "github.com/taikoxyz/taiko-mono/packages/taiko-client/prover/proof_producer"
-	proofSubmitter "github.com/taikoxyz/taiko-mono/packages/taiko-client/prover/proof_submitter"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/prover/proof_submitter/transaction"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/encoding"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/rpc"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/pkg/utils"
+	handler "github.com/OpenZeppelin/minimal-rollup-client/client/prover/event_handler"
+	producer "github.com/OpenZeppelin/minimal-rollup-client/client/prover/proof_producer"
+	proofSubmitter "github.com/OpenZeppelin/minimal-rollup-client/client/prover/proof_submitter"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/prover/proof_submitter/transaction"
 )
 
 // setApprovalAmount will set the allowance on the TaikoToken contract for the

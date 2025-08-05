@@ -6,7 +6,7 @@ import (
 	"github.com/ethereum/go-ethereum/log"
 	"github.com/urfave/cli/v2"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/cmd/flags"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/cmd/flags"
 )
 
 // InitLogger initializes the root logger with the command line flags.

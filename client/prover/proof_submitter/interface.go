@@ -4,8 +4,8 @@ import (
 	"context"
 	"errors"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/metadata"
-	proofProducer "github.com/taikoxyz/taiko-mono/packages/taiko-client/prover/proof_producer"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/metadata"
+	proofProducer "github.com/OpenZeppelin/minimal-rollup-client/client/prover/proof_producer"
 )
 
 var (

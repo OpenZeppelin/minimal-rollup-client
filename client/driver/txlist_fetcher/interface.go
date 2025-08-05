@@ -3,7 +3,7 @@ package txlistfetcher
 import (
 	"context"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/bindings/metadata"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/bindings/metadata"
 )
 
 // TxListFetcher is responsible for fetching the L2 txList bytes from L1

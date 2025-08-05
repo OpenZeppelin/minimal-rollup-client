@@ -6,12 +6,12 @@ import (
 
 	"github.com/urfave/cli/v2"
 
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/cmd/flags"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/cmd/utils"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/driver"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/internal/version"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/proposer"
-	"github.com/taikoxyz/taiko-mono/packages/taiko-client/prover"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/cmd/flags"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/cmd/utils"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/driver"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/internal/version"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/proposer"
+	"github.com/OpenZeppelin/minimal-rollup-client/client/prover"
 )
 
 func main() {
