@@ -4,10 +4,10 @@ import (
 	"context"
 	"fmt"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/cmd/flags"
 	echoprom "github.com/labstack/echo-contrib/prometheus"
 	"github.com/labstack/echo/v4"
 	"github.com/labstack/gommon/log"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/cmd/flags"
 	"github.com/urfave/cli/v2"
 	"golang.org/x/exp/slog"
 )

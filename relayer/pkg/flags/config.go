@@ -3,10 +3,10 @@ package flags
 import (
 	"crypto/ecdsa"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/cmd/flags"
 	"github.com/ethereum-optimism/optimism/op-service/txmgr"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/cmd/flags"
 	"github.com/urfave/cli/v2"
 )
 

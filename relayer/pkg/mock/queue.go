@@ -4,7 +4,7 @@ import (
 	"context"
 	"sync"
 
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/queue"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/queue"
 )
 
 type Queue struct {

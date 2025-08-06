@@ -6,13 +6,13 @@ import (
 	"math/big"
 	"testing"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/bindings/bridge"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/mock"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/queue"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/stretchr/testify/assert"
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/bindings/bridge"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/mock"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/queue"
 )
 
 func Test_sendProcessMessageCall(t *testing.T) {

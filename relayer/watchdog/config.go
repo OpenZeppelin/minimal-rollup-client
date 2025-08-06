@@ -4,19 +4,19 @@ import (
 	"crypto/ecdsa"
 	"fmt"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/cmd/flags"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/db"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/queue"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/queue/rabbitmq"
 	"github.com/ethereum-optimism/optimism/op-service/txmgr"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/cmd/flags"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/db"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/queue"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/queue/rabbitmq"
 	"github.com/urfave/cli/v2"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 
-	pkgFlags "github.com/taikoxyz/taiko-mono/packages/relayer/pkg/flags"
+	pkgFlags "github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/flags"
 )
 
 type Config struct {

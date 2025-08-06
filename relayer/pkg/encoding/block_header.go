@@ -1,9 +1,9 @@
 package encoding
 
 import (
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
 )
 
 func BlockToBlockHeader(block *types.Block) BlockHeader {

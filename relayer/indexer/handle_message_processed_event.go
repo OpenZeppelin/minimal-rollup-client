@@ -6,10 +6,10 @@ import (
 	"log/slog"
 	"math/big"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/bindings/bridge"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/queue"
 	"github.com/pkg/errors"
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/bindings/bridge"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/queue"
 )
 
 // handleMessageProcessedEvent handles an individual MessageProcessed event

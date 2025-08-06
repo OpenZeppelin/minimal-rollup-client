@@ -6,9 +6,9 @@ import (
 	"fmt"
 	"math/big"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/cmd/flags"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/crypto"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/cmd/flags"
 	"github.com/urfave/cli/v2"
 )
 

@@ -1,9 +1,9 @@
 package relayer
 
 import (
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/bindings/signalservice"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/bindings/signalservice"
 )
 
 type SignalService interface {

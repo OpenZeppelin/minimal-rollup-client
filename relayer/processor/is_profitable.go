@@ -5,8 +5,8 @@ import (
 	"log/slog"
 	"time"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
 	"github.com/pkg/errors"
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
 )
 
 var (

@@ -3,9 +3,9 @@ package mock
 import (
 	"math/big"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
 )
 
 type TokenVault struct {

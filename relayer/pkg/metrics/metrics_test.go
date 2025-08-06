@@ -7,9 +7,9 @@ import (
 	"testing"
 	"time"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/cmd/flags"
 	"github.com/labstack/echo/v4"
 	"github.com/stretchr/testify/assert"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/cmd/flags"
 	"github.com/urfave/cli/v2"
 )
 

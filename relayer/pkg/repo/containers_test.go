@@ -12,7 +12,7 @@ import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/db"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/db"
 )
 
 var (

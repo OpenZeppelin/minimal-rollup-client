@@ -6,8 +6,8 @@ import (
 	"log/slog"
 	"math/big"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
 	"github.com/pkg/errors"
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
 )
 
 // saveEventToDB is used to save any type of event to the database

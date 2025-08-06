@@ -4,10 +4,10 @@ import (
 	"context"
 	"math/big"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/pkg/errors"
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
 )
 
 var (

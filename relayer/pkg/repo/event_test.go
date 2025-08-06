@@ -13,8 +13,8 @@ import (
 	"gopkg.in/go-playground/assert.v1"
 	"gorm.io/datatypes"
 
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/db"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/db"
 )
 
 var testMsgHash = "0x1"

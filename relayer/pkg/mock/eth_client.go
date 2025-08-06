@@ -6,10 +6,10 @@ import (
 	"math/big"
 	"time"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
 	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
 )
 
 var (

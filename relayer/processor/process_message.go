@@ -11,6 +11,11 @@ import (
 	"strings"
 	"time"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/bindings/bridge"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/encoding"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/proof"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/queue"
 	"github.com/ethereum-optimism/optimism/op-service/txmgr"
 	"github.com/ethereum/go-ethereum"
 	"github.com/ethereum/go-ethereum/accounts/abi"
@@ -20,11 +25,6 @@ import (
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/ethereum/go-ethereum/params"
 	"github.com/pkg/errors"
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/bindings/bridge"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/encoding"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/proof"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/queue"
 )
 
 var (

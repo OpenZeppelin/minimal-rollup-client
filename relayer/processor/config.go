@@ -12,11 +12,11 @@ import (
 	"gorm.io/gorm"
 	"gorm.io/gorm/logger"
 
-	"github.com/taikoxyz/taiko-mono/packages/relayer/cmd/flags"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/db"
-	pkgFlags "github.com/taikoxyz/taiko-mono/packages/relayer/pkg/flags"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/queue"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/queue/rabbitmq"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/cmd/flags"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/db"
+	pkgFlags "github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/flags"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/queue"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/queue/rabbitmq"
 )
 
 // hopConfig is a config struct that must be provided for an individual

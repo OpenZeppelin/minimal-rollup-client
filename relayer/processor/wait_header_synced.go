@@ -5,7 +5,7 @@ import (
 	"log/slog"
 	"time"
 
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
 )
 
 // waitHeaderSynced waits for an event to appear in the database from the indexer

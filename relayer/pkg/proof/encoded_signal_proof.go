@@ -4,8 +4,8 @@ import (
 	"context"
 	"math/big"
 
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/encoding"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/encoding"
 
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"

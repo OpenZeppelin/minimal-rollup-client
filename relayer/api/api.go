@@ -8,13 +8,13 @@ import (
 	"sync"
 	"time"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/bindings/taikol2"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/http"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/repo"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/utils"
 	"github.com/cenkalti/backoff"
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/labstack/echo/v4"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/bindings/taikol2"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/http"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/repo"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/utils"
 	"github.com/urfave/cli/v2"
 )
 

@@ -7,11 +7,11 @@ import (
 	"net/http"
 	"os"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/bindings/taikol2"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
 	"github.com/labstack/echo/v4/middleware"
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/bindings/taikol2"
 
 	echo "github.com/labstack/echo/v4"
 )
