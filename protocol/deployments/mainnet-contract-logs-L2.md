@@ -30,7 +30,7 @@
   - bridge_watchdog: `0x0000000000000000000000000000000000000000`
 - todo:
   - deploy and register BridgedERC20V2
-  - change owner to delegate controller
+  - change owner to DelegateOwner
 - logs:
   - deployed on May 1, 2024 @commit`56dddf2b6`
   - redeployed on May 22, 2024 @commit`b955e0e`
@@ -47,8 +47,9 @@
 
 - proxy: `0x1670000000000000000000000000000000000001`
 - impl: `0x95ae2918dcbc6aFF8B4c1F1BCC1bf819b6e08B83`
-- owner: `0xfA06E15B8b4c5BF3FC5d9cfD083d45c53Cbe8C7C`
+- owner: `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8`
 - todo:
+  - change owner to DelegateOwner
   - upgrade the contract:https://github.com/taikoxyz/taiko-mono/pull/17529
 - logs:
   - deployed on May 1, 2024 @commit`56dddf2b6`
@@ -60,13 +61,14 @@
   - upgrade impl to `0x8fb67c2c16dc8578b6d69bc668236924f4c1b0f7` @commit`3ae25fd` @tx`0xd95435c742c01B0E982913BcA252173Ae96DF61d`
   - upgrade impl to `0x4Ca6bE8C1Ec05beFB216bAEEF9EE36997e35E98E` @commit`a3e1cf7` @tx`0xdf0348394d5e58f801de917575aafdc1cb55533b14a6e46fd460d1437238dc02`
   - upgrade impl to `0x95ae2918dcbc6aFF8B4c1F1BCC1bf819b6e08B83` @commit`9345f14` @tx`0xdbe9caf2b1282d0fecf9a752f2c1aeade8820bb66bb5ad210f0081996504173b`
-  - changed owner to delegate controller @tx`0x75ae517cf2b1e901b26180622ca9f44c7502ad007391c33f08630042df34a86e`
 
 #### erc20_vault
 
 - proxy: `0x1670000000000000000000000000000000000002`
 - impl: `0xb96AbB41b01E3ad519D00E80355a1c3801910F62`
-- owner: `0xfA06E15B8b4c5BF3FC5d9cfD083d45c53Cbe8C7C`
+- owner: `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8`
+- todo:
+  - change owner to DelegateOwner
 - logs:
   - deployed on May 1, 2024 @commit`56dddf2b6`
   - redeployed on May 22, 2024 @commit`b955e0e`
@@ -75,45 +77,46 @@
   - linked bridged USDC to `0x07d83526730c7438048D55A4fc0b850e2aaB6f0b` @tx`0xf1752ac712779e9ae53d408abdc5eec70e63582433143d6d91a489a1e8fc4778`
   - changed owner to `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8` @tx`0xf68861171c602e3e75ca69e950957fcb908c7949c6df9a9ea3026c238ebb1e9c`
   - upgrade impl to `0xb96AbB41b01E3ad519D00E80355a1c3801910F62` @commit`9345f14` @tx`0xdbe9caf2b1282d0fecf9a752f2c1aeade8820bb66bb5ad210f0081996504173b`
-  - change owner to delegate controller @tx`0x777b65f0e1bbbc5555007b63a93a4881598c90ac73684f6ad850b737d46c2434`
 
 #### erc721_vault
 
 - proxy: `0x1670000000000000000000000000000000000003`
 - impl: `0xd532f20a4751156C566Da7745db95E7f80145B36`
-- owner: `0xfA06E15B8b4c5BF3FC5d9cfD083d45c53Cbe8C7C`
+- owner: `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8`
+- todo:
+  - change owner to DelegateOwner
 - logs:
   - deployed on May 1, 2024 @commit`56dddf2b6`
   - redeployed on May 22, 2024 @commit`b955e0e`
   - upgrade to `0xD68BFe63E0f2983D89cbB225BEd068a8f19f5e08` @`0x8705703a93cb4cfc1ae69d1277f4464f807c7615237f2b04ff010c6e45708d34`
   - changed owner to `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8` @tx`0xf68861171c602e3e75ca69e950957fcb908c7949c6df9a9ea3026c238ebb1e9c`
   - upgrade impl to `0xd532f20a4751156C566Da7745db95E7f80145B36` @commit`9345f14` @tx`0xdbe9caf2b1282d0fecf9a752f2c1aeade8820bb66bb5ad210f0081996504173b`
-  - change owner to delegate controller @tx`0x777b65f0e1bbbc5555007b63a93a4881598c90ac73684f6ad850b737d46c2434`
 
 #### erc1155_vault
 
 - proxy: `0x1670000000000000000000000000000000000004`
 - impl: `0xBBBC4ad39488b990E095042fa6c59A90d3817846`
-- owner: `0xfA06E15B8b4c5BF3FC5d9cfD083d45c53Cbe8C7C`
+- owner: `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8`
+- todo:
+  - change owner to DelegateOwner
 - logs:
   - deployed on May 1, 2024 @commit`56dddf2b6`
   - redeployed on May 22, 2024 @commit`b955e0e`
   - upgrade to `0x3918a2910C393A1A2EF7AAc807970EFE47A54b7e` @tx`0x264a2a553672a5480141638c3ca00a7bdf2c54e48c53f41867ca4f64703e16d7`
   - changed owner to `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8` @tx`0xf68861171c602e3e75ca69e950957fcb908c7949c6df9a9ea3026c238ebb1e9c`
   - upgrade impl to `0xBBBC4ad39488b990E095042fa6c59A90d3817846` @commit`9345f14` @tx`0xdbe9caf2b1282d0fecf9a752f2c1aeade8820bb66bb5ad210f0081996504173b`
-  - change owner to delegate controller @tx`0x777b65f0e1bbbc5555007b63a93a4881598c90ac73684f6ad850b737d46c2434`
 
 #### signal_service
 
 - proxy: `0x1670000000000000000000000000000000000005`
-- impl: `0xaea51c413Bd15bBee72737C8094BE942B5208762`
-- owner: `0xfA06E15B8b4c5BF3FC5d9cfD083d45c53Cbe8C7C`
+- impl: `0x0167000000000000000000000000000000000005`
+- owner: `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8`
 - logs:
   - deployed on May 1, 2024 @commit`56dddf2b6`
   - redeployed on May 22, 2024 @commit`b955e0e`
   - changed owner to `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8` @tx`0xf68861171c602e3e75ca69e950957fcb908c7949c6df9a9ea3026c238ebb1e9c`
-  - upgrade impl to `0xaea51c413Bd15bBee72737C8094BE942B5208762` @commit`879fda0` @tx`0x0ae99d24b294622e3d3868c8dca911a5936231ce1f97254ec0c6a6f65f7aa81c`
-  - change owner to delegate controller @tx`0x75ae517cf2b1e901b26180622ca9f44c7502ad007391c33f08630042df34a86e`
+- todo:
+  - change owner to DelegateOwner
 
 ## Rollup Specific
 
@@ -133,10 +136,10 @@
   - redeployed on May 22, 2024 @commit`b955e0e`
   - changed owner to `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8` @tx`0xf68861171c602e3e75ca69e950957fcb908c7949c6df9a9ea3026c238ebb1e9c`
 
-#### Anchor
+#### taikoL2
 
 - proxy: `0x1670000000000000000000000000000000010001`
-- impl: `0x3cfe9b8E0e12289D78c91295c8353aB1731F06E1`
+- impl: `0x75E76c367D6be621bD90e4b1e32fBB3fF59150b6`
 - owner: `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8`
 - todo:
   - change owner to DelegateOwner
@@ -145,23 +148,21 @@
   - redeployed on May 22, 2024 @commit`b955e0e`
   - changed owner to `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8` @tx`0xf68861171c602e3e75ca69e950957fcb908c7949c6df9a9ea3026c238ebb1e9c`
   - upgrade impl to `0x75E76c367D6be621bD90e4b1e32fBB3fF59150b6` @commit`9345f14` @tx`0xdbe9caf2b1282d0fecf9a752f2c1aeade8820bb66bb5ad210f0081996504173b`
-  - upgrade impl to `0x3cfe9b8E0e12289D78c91295c8353aB1731F06E1` @commit`879fda0` @tx`0x0ae99d24b294622e3d3868c8dca911a5936231ce1f97254ec0c6a6f65f7aa81c`
 
 #### bridged_taiko_token
 
 - proxy: `0xA9d23408b9bA935c230493c40C73824Df71A0975`
 - impl: `0x473dBf07E06f5aE693F0c44b3ce7b5b8fA71d260`
-- owner: `0xfA06E15B8b4c5BF3FC5d9cfD083d45c53Cbe8C7C`
+- owner: `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8`
 - logs:
   - deployed @tx`0x3e0c2c3f7593b8af888c2b8fe3af79152426bdf2d0529f058722ae08c80c8991`
   - changed owner to `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8` @tx`0xf68861171c602e3e75ca69e950957fcb908c7949c6df9a9ea3026c238ebb1e9c`
-  - change owner to `0xfA06E15B8b4c5BF3FC5d9cfD083d45c53Cbe8C7C` @tx`https://taikoscan.io/tx/0x9c41e10e3764f350deea1a15f4b22ceb0c927b83a9601a8e357ece9ed473de71`
 
 #### bridged_usdc_token (native)
 
 - proxy: `0x07d83526730c7438048D55A4fc0b850e2aaB6f0b`
 - impl: `0x996a7A32C387Fd83e127A358fBc192e110459f2d`
-- owner: `0xfA06E15B8b4c5BF3FC5d9cfD083d45c53Cbe8C7C`
+- owner: `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8`
 - master minter: `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8`
 - logs:
   - deployed @tx`0xbd87fc07b1accbce04174c479cf9af6bb9c50b7e4677ec7417c4c6b327c30d01`
@@ -180,69 +181,3 @@
 - WETH9: `0xA51894664A773981C6C112C43ce576f315d5b1B6`
 - `davidcai.eth`:`0x56706F118e42AE069F20c5636141B844D1324AE1`
 - `admin.l2.taiko.eth (label)`: `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8`
-
-#### delegate_controller
-
-- proxy: `0xfA06E15B8b4c5BF3FC5d9cfD083d45c53Cbe8C7C`
-- impl: `0x6900f893Fb1dcf2868c7799Ac9a2dAf1c046c6bF`
-- owner: `0xfA06E15B8b4c5BF3FC5d9cfD083d45c53Cbe8C7C`
-- logs:
-  - https://taikoscan.io/tx/0x2d60398c8f22ebccc3e3dfc5771f95cb104b2ea003230444879b08d0649d01af
-
-## Pacaya Contracts
-
-#### shared_resolver
-
-- proxy: `0xc32277f541bBADAA260337E71Cea53871D310DC8`
-- impl: `0xDaD5a963618b340bC88F267920907bE567Fd88c4`
-- owner: `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8`
-- names:
-  - taiko_token: `0xA9d23408b9bA935c230493c40C73824Df71A0975`
-  - bond_token: `0xA9d23408b9bA935c230493c40C73824Df71A0975`
-  - signal_service@1: `0x9e0a24964e5397B566c1ed39258e21aB5E35C77C`
-  - signal_service: `0x1670000000000000000000000000000000000005`
-  - bridge@1: `0xd60247c6848B7Ca29eDdF63AA924E53dB6Ddd8EC`
-  - bridge: `0x1670000000000000000000000000000000000001`
-  - erc20_vault@1: `0x996282cA11E5DEb6B5D122CC3B9A1FcAAD4415Ab`
-  - erc20_vault: `0x1670000000000000000000000000000000000002`
-  - erc721_vault@1: `0x0b470dd3A0e1C41228856Fb319649E7c08f419Aa`
-  - erc721_vault: `0x1670000000000000000000000000000000000003`
-  - erc1155_vault@1: `0xaf145913EA4a56BE22E120ED9C24589659881702`
-  - erc1155_vault: `0x1670000000000000000000000000000000000004`
-  - bridged_erc20: `0x98161D67f762A9E589E502348579FA38B1Ac47A8`
-  - bridged_erc20@1: `0xd60247c6848B7Ca29eDdF63AA924E53dB6Ddd8EC`
-  - bridged_erc721: `0x0167000000000000000000000000000000010097`
-  - bridged_erc721@1: `0xC3310905E2BC9Cfb198695B75EF3e5B69C6A1Bf7`
-  - bridged_erc1155: `0x0167000000000000000000000000000000010098`
-  - bridged_erc1155@1: `0x3c90963cFBa436400B0F9C46Aa9224cB379c2c40`
-  - taiko: `0x1670000000000000000000000000000000010001`
-- logs:
-  - deployed on May 19, 2025 @commit`879fda0` @tx `0x2e8f69a2aca2ca21d6294a3f060d2e3efc67dce1b349d2acd224eb5217a671d2`
-
-#### rollup_resolver
-
-- proxy: `0x73251237d8F1B99e9966bB054722F3446195Ea56`
-- impl: `0x80F61d445C9981Ba2B1399aFCC5e9bCc571df263`
-- owner: `0xCa5b76Cc7A38b86Db11E5aE5B1fc9740c3bA3DE8`
-- names:
-  - taiko_token: `0xA9d23408b9bA935c230493c40C73824Df71A0975`
-  - bond_token: `0xA9d23408b9bA935c230493c40C73824Df71A0975`
-  - signal_service@1: `0x9e0a24964e5397B566c1ed39258e21aB5E35C77C`
-  - signal_service: `0x1670000000000000000000000000000000000005`
-  - bridge@1: `0xd60247c6848B7Ca29eDdF63AA924E53dB6Ddd8EC`
-  - bridge: `0x1670000000000000000000000000000000000001`
-  - erc20_vault@1: `0x996282cA11E5DEb6B5D122CC3B9A1FcAAD4415Ab`
-  - erc20_vault: `0x1670000000000000000000000000000000000002`
-  - erc721_vault@1: `0x0b470dd3A0e1C41228856Fb319649E7c08f419Aa`
-  - erc721_vault: `0x1670000000000000000000000000000000000003`
-  - erc1155_vault@1: `0xaf145913EA4a56BE22E120ED9C24589659881702`
-  - erc1155_vault: `0x1670000000000000000000000000000000000004`
-  - bridged_erc20: `0x98161D67f762A9E589E502348579FA38B1Ac47A8`
-  - bridged_erc20@1: `0xd60247c6848B7Ca29eDdF63AA924E53dB6Ddd8EC`
-  - bridged_erc721: `0x0167000000000000000000000000000000010097`
-  - bridged_erc721@1: `0xC3310905E2BC9Cfb198695B75EF3e5B69C6A1Bf7`
-  - bridged_erc1155: `0x0167000000000000000000000000000000010098`
-  - bridged_erc1155@1: `0x3c90963cFBa436400B0F9C46Aa9224cB379c2c40`
-  - taiko: `0x1670000000000000000000000000000000010001`
-- logs:
-  - deployed on May 19, 2025 @commit`879fda0` @tx `0x4eb337b2b8d41ddc2f35e138a58765dc0e1055f1075e7667babf32d6ec1bc451`

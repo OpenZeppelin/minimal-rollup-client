@@ -20,35 +20,39 @@ contract MainnetInbox is TaikoInbox {
         TaikoInbox(_wrapper, _verifier, _bondToken, _signalService)
     { }
 
-    function _getConfig() internal pure virtual override returns (ITaikoInbox.Config memory) {
+    function pacayaConfig() public pure override returns (ITaikoInbox.Config memory) {
         // All hard-coded configurations:
         // - treasury: the actual TaikoL2 address.
         // - anchorGasLimit: 1_000_000
-
-        (uint64 maxUnverifiedBatches_, uint64 batchRingBufferSize_) = _getRingbufferConfig();
         return ITaikoInbox.Config({
             chainId: LibNetwork.TAIKO_MAINNET,
             // Ring buffers are being reused on the mainnet, therefore the following two
             // configuration values must NEVER be changed!!!
-            maxUnverifiedBatches: maxUnverifiedBatches_,
-            batchRingBufferSize: batchRingBufferSize_,
+            maxUnverifiedBatches: 324_000, // DO NOT CHANGE!!!
+            batchRingBufferSize: 360_000, // DO NOT CHANGE!!!
             maxBatchesToVerify: 16,
-            blockMaxGasLimit: 32_000_000,
-            livenessBond: 25e18, // 25 Taiko token per batch
+            blockMaxGasLimit: 240_000_000,
+            livenessBondBase: 50e18, // 50 Taiko token per batch
+            livenessBondPerBlock: 0, // deprecated
             stateRootSyncInternal: 4,
-            maxAnchorHeightOffset: 96,
+            maxAnchorHeightOffset: 64,
             baseFeeConfig: LibSharedData.BaseFeeConfig({
-                adjustmentQuotient: 40,
-                sharingPctg: 75,
-                gasIssuancePerSecond: 1_000_000,
-                minGasExcess: 1_440_000_000,
+                adjustmentQuotient: 8,
+                sharingPctg: 50,
+                gasIssuancePerSecond: 5_000_000,
+                minGasExcess: 1_344_899_430, // 0.01 gwei
                 maxGasIssuancePerBlock: 600_000_000 // two minutes: 5_000_000 * 120
              }),
             provingWindow: 2 hours,
             cooldownWindow: 2 hours,
             maxSignalsToReceive: 16,
             maxBlocksPerBatch: 768,
-            forkHeights: _getForkHeights()
+            forkHeights: ITaikoInbox.ForkHeights({
+                ontake: 538_304,
+                pacaya: 538_304 * 10, // TODO
+                shasta: 0,
+                unzen: 0
+            })
         });
     }
 
@@ -58,27 +62,5 @@ contract MainnetInbox is TaikoInbox {
 
     function _loadReentryLock() internal view override returns (uint8) {
         return LibFasterReentryLock.loadReentryLock();
-    }
-
-    function _getForkHeights() internal pure virtual returns (ITaikoInbox.ForkHeights memory) {
-        return ITaikoInbox.ForkHeights({
-            ontake: 538_304,
-            pacaya: 1_166_000,
-            shasta: 0,
-            unzen: 0,
-            etna: 0,
-            fuji: 0
-        });
-    }
-
-    /// @dev Never change the following two values!!!
-    function _getRingbufferConfig()
-        internal
-        pure
-        virtual
-        returns (uint64 maxUnverifiedBatches_, uint64 batchRingBufferSize_)
-    {
-        maxUnverifiedBatches_ = 324_000;
-        batchRingBufferSize_ = 360_000;
     }
 }

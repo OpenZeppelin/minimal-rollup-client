@@ -3,7 +3,7 @@ pragma solidity ^0.8.24;
 
 import "@openzeppelin/contracts/utils/cryptography/ECDSA.sol";
 import "src/shared/common/EssentialContract.sol";
-import "src/shared/libs/LibNames.sol";
+import "src/shared/libs/LibStrings.sol";
 import "../../verifiers/IVerifier.sol";
 
 /// @title OpVerifier
@@ -11,15 +11,9 @@ import "../../verifiers/IVerifier.sol";
 /// onchain.
 /// @custom:security-contact security@taiko.xyz
 contract OpVerifier is EssentialContract, IVerifier {
-    address public immutable taikoInbox;
-    address public immutable proofVerifier;
-
     uint256[50] private __gap;
 
-    constructor(address _taikoInbox, address _proofVerifier) EssentialContract() {
-        taikoInbox = _taikoInbox;
-        proofVerifier = _proofVerifier;
-    }
+    constructor(address _resolver) EssentialContract(_resolver) { }
 
     /// @notice Initializes the contract.
     /// @param _owner The owner of this contract. msg.sender will be used if this value is zero.
@@ -33,6 +27,6 @@ contract OpVerifier is EssentialContract, IVerifier {
         bytes calldata _proof
     )
         external
-        onlyFromEither(taikoInbox, proofVerifier)
+        onlyFromNamedEither(LibStrings.B_TAIKO, LibStrings.B_PROOF_VERIFIER)
     { }
 }

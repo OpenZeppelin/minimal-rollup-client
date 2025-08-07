@@ -22,7 +22,7 @@ abstract contract PreconfRouterTestBase is Layer1Test {
 
         address taikoWrapper = deploy({
             name: "taiko_wrapper",
-            impl: address(new MockTaikoInbox(0)),
+            impl: address(new MockTaikoInbox(address(resolver))),
             data: abi.encodeCall(MockTaikoInbox.init, (address(0)))
         });
 
@@ -31,7 +31,7 @@ abstract contract PreconfRouterTestBase is Layer1Test {
             deploy({
                 name: "preconf_whitelist",
                 impl: address(new PreconfWhitelist()),
-                data: abi.encodeCall(PreconfWhitelist.init, (whitelistOwner, 2, 2))
+                data: abi.encodeCall(PreconfWhitelist.init, (whitelistOwner, 2))
             })
         );
 
@@ -48,12 +48,7 @@ abstract contract PreconfRouterTestBase is Layer1Test {
     function addOperators(address[] memory operators) internal {
         for (uint256 i = 0; i < operators.length; i++) {
             vm.prank(whitelistOwner);
-            whitelist.addOperator(operators[i], _getSequencerAddress(operators[i]));
+            whitelist.addOperator(operators[i]);
         }
-    }
-
-    // Helper function that returns a deterministic sequencer address for testing purposes
-    function _getSequencerAddress(address sequencer) internal pure returns (address) {
-        return address(uint160(sequencer) + 1000);
     }
 }

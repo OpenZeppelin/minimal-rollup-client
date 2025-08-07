@@ -47,8 +47,8 @@ contract TaikoWrapper is EssentialContract, IProposeBatch {
     error InvalidTimeShift();
     error InvalidSignalSlots();
     error OldestForcedInclusionDue();
-    error InvalidProposer();
 
+    uint16 public constant MIN_TXS_PER_FORCED_INCLUSION = 512;
     IProposeBatch public immutable inbox;
     IForcedInclusionStore public immutable forcedInclusionStore;
     address public immutable preconfRouter;
@@ -62,7 +62,7 @@ contract TaikoWrapper is EssentialContract, IProposeBatch {
     )
         nonZeroAddr(_inbox)
         nonZeroAddr(_forcedInclusionStore)
-        EssentialContract()
+        EssentialContract(address(0))
     {
         inbox = IProposeBatch(_inbox);
         forcedInclusionStore = IForcedInclusionStore(_forcedInclusionStore);
@@ -74,43 +74,34 @@ contract TaikoWrapper is EssentialContract, IProposeBatch {
     }
 
     /// @inheritdoc IProposeBatch
-    function v4ProposeBatch(
+    function proposeBatch(
         bytes calldata _params,
-        bytes calldata _txList,
-        bytes calldata
+        bytes calldata _txList
     )
         external
-        onlyFrom(preconfRouter)
+        onlyFromOptional(preconfRouter)
         nonReentrant
         returns (ITaikoInbox.BatchInfo memory, ITaikoInbox.BatchMetadata memory)
     {
         (bytes memory bytesX, bytes memory bytesY) = abi.decode(_params, (bytes, bytes));
-        ITaikoInbox.BatchParams memory params = abi.decode(bytesY, (ITaikoInbox.BatchParams));
 
         if (bytesX.length == 0) {
             require(!forcedInclusionStore.isOldestForcedInclusionDue(), OldestForcedInclusionDue());
         } else {
-            address proposer = params.proposer;
-            _validateForcedInclusionParams(forcedInclusionStore, bytesX, proposer);
-            inbox.v4ProposeBatch(bytesX, "", "");
+            _validateForcedInclusionParams(forcedInclusionStore, bytesX);
+            inbox.proposeBatch(bytesX, "");
         }
 
         // Propose the normal batch after the potential forced inclusion batch.
+        ITaikoInbox.BatchParams memory params = abi.decode(bytesY, (ITaikoInbox.BatchParams));
         require(params.blobParams.blobHashes.length == 0, ITaikoInbox.InvalidBlobParams());
         require(params.blobParams.createdIn == 0, ITaikoInbox.InvalidBlobCreatedIn());
-        require(params.isForcedInclusion == false, ITaikoInbox.InvalidForcedInclusion());
-
-        return inbox.v4ProposeBatch(bytesY, _txList, "");
+        return inbox.proposeBatch(bytesY, _txList);
     }
 
-    /// @dev Validates the forced inclusion params and consumes the oldest forced inclusion.
-    /// @param _forcedInclusionStore The forced inclusion store.
-    /// @param _bytesX The bytes of the forced inclusion params.
-    /// @param _proposer The proposer of the regular batch.
     function _validateForcedInclusionParams(
         IForcedInclusionStore _forcedInclusionStore,
-        bytes memory _bytesX,
-        address _proposer
+        bytes memory _bytesX
     )
         internal
     {
@@ -119,19 +110,11 @@ contract TaikoWrapper is EssentialContract, IProposeBatch {
         IForcedInclusionStore.ForcedInclusion memory inclusion =
             _forcedInclusionStore.consumeOldestForcedInclusion(p.proposer);
 
-        // Ensure the proposer is the same that for the regular batch(which is validated upstream)
-        require(p.proposer == _proposer, InvalidProposer());
-
         // Only one block can be built from the request
         require(p.blocks.length == 1, InvalidBlockSize());
-        require(p.isForcedInclusion, ITaikoInbox.InvalidForcedInclusion());
 
-        // Ensure that msg.sender does not throttle transactions in the inclusion by setting a small
-        // `numTransactions` parameter value. The `numTransactions` is set to its maximum possible
-        // value, allowing the actual number of transactions in the block to be determined by the
-        // gas used and the transactions contained within the blobs.
-        require(p.blocks[0].numTransactions != type(uint16).max, InvalidBlockTxs());
-
+        // Need to make sure enough transactions in the forced inclusion request are included.
+        require(p.blocks[0].numTransactions >= MIN_TXS_PER_FORCED_INCLUSION, InvalidBlockTxs());
         require(p.blocks[0].timeShift == 0, InvalidTimeShift());
         require(p.blocks[0].signalSlots.length == 0, InvalidSignalSlots());
 
