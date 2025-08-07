@@ -2,7 +2,6 @@ package blobencoding
 
 import (
 	"bytes"
-	"encoding/json"
 	"errors"
 	"fmt"
 
@@ -113,15 +112,11 @@ func stitchBlobs(blobs []*eth.Blob) ([]byte, error) {
 	return result, nil
 }
 
-// We are probably not going to use JSON encoding for blobs
-// and we are just picking a convenient encoding below for now.
-// TODO: Use CBOR?
-
 func encodeAttributes(attrs []Attribute) ([]byte, error) {
-	return json.Marshal(attrs)
+	return rlp.EncodeToBytes(attrs)
 }
 
 func decodeAttributes(b []byte) (attrs []Attribute, err error) {
-	err = json.Unmarshal(b, &attrs)
+	err = rlp.DecodeBytes(b, &attrs)
 	return
 }

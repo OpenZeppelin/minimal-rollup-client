@@ -34,7 +34,7 @@ func (b *BlobTransactionBuilder) BuildMinimalRollup(
 	}
 
 	return &txmgr.TxCandidate{
-		// TxData:   data, // TODO: Need to encode this as explained blow
+		// TxData:   data, // TODO: Need to encode this as explained above
 		Blobs:    blobs,
 		To:       &b.taikoWrapperAddress, // TODO: Use different address?
 		GasLimit: b.gasLimit,
