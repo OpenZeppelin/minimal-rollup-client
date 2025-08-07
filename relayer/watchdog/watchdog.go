@@ -10,6 +10,12 @@ import (
 	"sync"
 	"time"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/bindings/bridge"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/encoding"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/queue"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/repo"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/utils"
 	"github.com/cenkalti/backoff/v4"
 	"github.com/cyberhorsey/errors"
 	"github.com/ethereum-optimism/optimism/op-service/txmgr"
@@ -21,12 +27,6 @@ import (
 	"github.com/ethereum/go-ethereum/crypto"
 	"github.com/ethereum/go-ethereum/ethclient"
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/bindings/bridge"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/encoding"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/queue"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/repo"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/utils"
 	"github.com/urfave/cli/v2"
 )
 

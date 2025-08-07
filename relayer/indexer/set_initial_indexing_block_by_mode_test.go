@@ -4,8 +4,8 @@ import (
 	"math/big"
 	"testing"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/mock"
 	"github.com/stretchr/testify/assert"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/mock"
 )
 
 func Test_setInitialIndexingBlockByMode(t *testing.T) {

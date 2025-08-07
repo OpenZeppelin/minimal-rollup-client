@@ -8,7 +8,7 @@ import (
 
 	"log/slog"
 
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/metrics"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/metrics"
 	"github.com/urfave/cli/v2"
 )
 

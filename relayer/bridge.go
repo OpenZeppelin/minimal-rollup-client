@@ -1,9 +1,9 @@
 package relayer
 
 import (
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/bindings/bridge"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/bindings/bridge"
 )
 
 type Bridge interface {

@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/encoding"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/mock"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/core/types"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/encoding"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/mock"
 	"gopkg.in/go-playground/assert.v1"
 )
 

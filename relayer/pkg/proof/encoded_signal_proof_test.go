@@ -4,10 +4,10 @@ import (
 	"context"
 	"testing"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/mock"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/common/hexutil"
 	"github.com/stretchr/testify/assert"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/mock"
 )
 
 var (

@@ -7,10 +7,10 @@ import (
 	"net/http"
 	"strconv"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
 	"github.com/cyberhorsey/webutils"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/labstack/echo/v4"
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
 )
 
 type JSONData struct {

@@ -9,8 +9,8 @@ import (
 	"slices"
 	"time"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
 	"github.com/morkid/paginate"
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
 	"gorm.io/datatypes"
 )
 

@@ -3,11 +3,11 @@ package indexer
 import (
 	"time"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/cmd/flags"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/db"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/queue"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/queue/rabbitmq"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/cmd/flags"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/db"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/queue"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/queue/rabbitmq"
 	"github.com/urfave/cli/v2"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"

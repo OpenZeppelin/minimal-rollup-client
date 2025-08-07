@@ -5,7 +5,7 @@ import (
 	"errors"
 	"sync"
 
-	"github.com/taikoxyz/taiko-mono/packages/relayer/bindings/bridge"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/bindings/bridge"
 )
 
 var (

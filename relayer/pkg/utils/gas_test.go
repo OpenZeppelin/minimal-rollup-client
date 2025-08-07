@@ -4,9 +4,9 @@ import (
 	"context"
 	"testing"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/mock"
 	"github.com/ethereum/go-ethereum/accounts/abi/bind"
 	"github.com/pkg/errors"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/mock"
 	"gotest.tools/assert"
 )
 

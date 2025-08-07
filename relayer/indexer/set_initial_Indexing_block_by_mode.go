@@ -3,8 +3,8 @@ package indexer
 import (
 	"math/big"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
 	"github.com/pkg/errors"
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
 )
 
 // setInitialIndexingBlockByMode takes in a SyncMode and determines how we should

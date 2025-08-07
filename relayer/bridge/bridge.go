@@ -18,8 +18,8 @@ import (
 	"github.com/urfave/cli/v2"
 	"golang.org/x/exp/slog"
 
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/bindings/bridge"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/bindings/bridge"
 )
 
 type ethClient interface {

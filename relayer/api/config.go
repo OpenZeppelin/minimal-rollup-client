@@ -3,9 +3,9 @@ package api
 import (
 	"strings"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/cmd/flags"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/db"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/cmd/flags"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/db"
 	"github.com/urfave/cli/v2"
 	"gorm.io/driver/mysql"
 	"gorm.io/gorm"

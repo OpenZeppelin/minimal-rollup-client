@@ -5,14 +5,14 @@ import (
 	"log"
 	"os"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/api"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/bridge"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/cmd/flags"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/cmd/utils"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/indexer"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/processor"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/watchdog"
 	"github.com/joho/godotenv"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/api"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/bridge"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/cmd/flags"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/cmd/utils"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/indexer"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/processor"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/watchdog"
 	"github.com/urfave/cli/v2"
 )
 

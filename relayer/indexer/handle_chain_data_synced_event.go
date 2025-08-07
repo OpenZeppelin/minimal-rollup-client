@@ -6,10 +6,10 @@ import (
 
 	"log/slog"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/bindings/signalservice"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/pkg/errors"
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/bindings/signalservice"
 )
 
 // handleChainDataSyncedEvent handles an individual ChainDataSynced event

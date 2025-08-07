@@ -19,15 +19,15 @@ import (
 	"github.com/urfave/cli/v2"
 	"golang.org/x/sync/errgroup"
 
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/bindings/bridge"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/bindings/signalservice"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/bindings/taikol1"
-	v2 "github.com/taikoxyz/taiko-mono/packages/relayer/bindings/v2/taikol1"
-	v3 "github.com/taikoxyz/taiko-mono/packages/relayer/bindings/v3/taikoinbox"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/queue"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/repo"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/utils"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/bindings/bridge"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/bindings/signalservice"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/bindings/taikol1"
+	v2 "github.com/OpenZeppelin/minimal-rollup-client/relayer/bindings/v2/taikol1"
+	v3 "github.com/OpenZeppelin/minimal-rollup-client/relayer/bindings/v3/taikoinbox"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/queue"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/repo"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/utils"
 )
 
 var (

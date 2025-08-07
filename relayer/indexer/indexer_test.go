@@ -4,8 +4,8 @@ import (
 	"context"
 	"time"
 
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/mock"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/mock"
 )
 
 func newTestService(syncMode SyncMode, watchMode WatchMode) (*Indexer, relayer.Bridge) {

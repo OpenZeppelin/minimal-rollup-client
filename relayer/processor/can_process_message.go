@@ -4,8 +4,8 @@ import (
 	"context"
 	"log/slog"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
 	"github.com/ethereum/go-ethereum/common"
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
 )
 
 // canProcessMessage determines whether a message is processable by the relayer.

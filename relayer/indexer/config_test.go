@@ -7,11 +7,11 @@ import (
 	"github.com/stretchr/testify/assert"
 	"github.com/urfave/cli/v2"
 
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/cmd/flags"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/db"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/mock"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/queue"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/cmd/flags"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/db"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/mock"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/queue"
 )
 
 var (

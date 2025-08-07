@@ -8,10 +8,10 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
 	"github.com/cyberhorsey/webutils/testutils"
 	"github.com/labstack/echo/v4"
 	"github.com/stretchr/testify/assert"
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
 )
 
 func Test_GetEventsByAddress(t *testing.T) {

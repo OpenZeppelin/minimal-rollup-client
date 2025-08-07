@@ -3,10 +3,10 @@ package encoding
 import (
 	"math/big"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/bindings/bridge"
 	"github.com/ethereum/go-ethereum/accounts/abi"
 	"github.com/ethereum/go-ethereum/common"
 	"github.com/ethereum/go-ethereum/log"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/bindings/bridge"
 )
 
 var hopProofsT abi.Type

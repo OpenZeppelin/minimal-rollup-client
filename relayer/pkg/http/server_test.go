@@ -6,12 +6,12 @@ import (
 	"net/http/httptest"
 	"testing"
 
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/mock"
+	"github.com/OpenZeppelin/minimal-rollup-client/relayer/pkg/repo"
 	"github.com/joho/godotenv"
 	echo "github.com/labstack/echo/v4"
 	"github.com/stretchr/testify/assert"
-	"github.com/taikoxyz/taiko-mono/packages/relayer"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/mock"
-	"github.com/taikoxyz/taiko-mono/packages/relayer/pkg/repo"
 )
 
 func newTestServer() *Server {
