@@ -35,113 +35,113 @@ type IBlobRefRegistryBlobRef struct {
 	Blobhashes  [][32]byte
 }
 
-// IBlobRefRegistryMetaData contains all meta data concerning the IBlobRefRegistry contract.
-var IBlobRefRegistryMetaData = &bind.MetaData{
+// BlobRefRegistryMetaData contains all meta data concerning the BlobRefRegistry contract.
+var BlobRefRegistryMetaData = &bind.MetaData{
 	ABI: "[{\"type\":\"function\",\"name\":\"getRef\",\"inputs\":[{\"name\":\"blobIndices\",\"type\":\"uint256[]\",\"internalType\":\"uint256[]\"}],\"outputs\":[{\"name\":\"\",\"type\":\"tuple\",\"internalType\":\"structIBlobRefRegistry.BlobRef\",\"components\":[{\"name\":\"blockNumber\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"blobhashes\",\"type\":\"bytes32[]\",\"internalType\":\"bytes32[]\"}]}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"isRefRegistered\",\"inputs\":[{\"name\":\"refHash\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"}],\"outputs\":[{\"name\":\"\",\"type\":\"bool\",\"internalType\":\"bool\"}],\"stateMutability\":\"view\"},{\"type\":\"function\",\"name\":\"registerRef\",\"inputs\":[{\"name\":\"blobIndices\",\"type\":\"uint256[]\",\"internalType\":\"uint256[]\"}],\"outputs\":[{\"name\":\"refHash\",\"type\":\"bytes32\",\"internalType\":\"bytes32\"},{\"name\":\"ref\",\"type\":\"tuple\",\"internalType\":\"structIBlobRefRegistry.BlobRef\",\"components\":[{\"name\":\"blockNumber\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"blobhashes\",\"type\":\"bytes32[]\",\"internalType\":\"bytes32[]\"}]}],\"stateMutability\":\"nonpayable\"},{\"type\":\"event\",\"name\":\"Registered\",\"inputs\":[{\"name\":\"refHash\",\"type\":\"bytes32\",\"indexed\":true,\"internalType\":\"bytes32\"},{\"name\":\"ref\",\"type\":\"tuple\",\"indexed\":false,\"internalType\":\"structIBlobRefRegistry.BlobRef\",\"components\":[{\"name\":\"blockNumber\",\"type\":\"uint256\",\"internalType\":\"uint256\"},{\"name\":\"blobhashes\",\"type\":\"bytes32[]\",\"internalType\":\"bytes32[]\"}]}],\"anonymous\":false}]",
 }
 
-// IBlobRefRegistryABI is the input ABI used to generate the binding from.
-// Deprecated: Use IBlobRefRegistryMetaData.ABI instead.
-var IBlobRefRegistryABI = IBlobRefRegistryMetaData.ABI
+// BlobRefRegistryABI is the input ABI used to generate the binding from.
+// Deprecated: Use BlobRefRegistryMetaData.ABI instead.
+var BlobRefRegistryABI = BlobRefRegistryMetaData.ABI
 
-// IBlobRefRegistry is an auto generated Go binding around an Ethereum contract.
-type IBlobRefRegistry struct {
-	IBlobRefRegistryCaller     // Read-only binding to the contract
-	IBlobRefRegistryTransactor // Write-only binding to the contract
-	IBlobRefRegistryFilterer   // Log filterer for contract events
+// BlobRefRegistry is an auto generated Go binding around an Ethereum contract.
+type BlobRefRegistry struct {
+	BlobRefRegistryCaller     // Read-only binding to the contract
+	BlobRefRegistryTransactor // Write-only binding to the contract
+	BlobRefRegistryFilterer   // Log filterer for contract events
 }
 
-// IBlobRefRegistryCaller is an auto generated read-only Go binding around an Ethereum contract.
-type IBlobRefRegistryCaller struct {
+// BlobRefRegistryCaller is an auto generated read-only Go binding around an Ethereum contract.
+type BlobRefRegistryCaller struct {
 	contract *bind.BoundContract // Generic contract wrapper for the low level calls
 }
 
-// IBlobRefRegistryTransactor is an auto generated write-only Go binding around an Ethereum contract.
-type IBlobRefRegistryTransactor struct {
+// BlobRefRegistryTransactor is an auto generated write-only Go binding around an Ethereum contract.
+type BlobRefRegistryTransactor struct {
 	contract *bind.BoundContract // Generic contract wrapper for the low level calls
 }
 
-// IBlobRefRegistryFilterer is an auto generated log filtering Go binding around an Ethereum contract events.
-type IBlobRefRegistryFilterer struct {
+// BlobRefRegistryFilterer is an auto generated log filtering Go binding around an Ethereum contract events.
+type BlobRefRegistryFilterer struct {
 	contract *bind.BoundContract // Generic contract wrapper for the low level calls
 }
 
-// IBlobRefRegistrySession is an auto generated Go binding around an Ethereum contract,
+// BlobRefRegistrySession is an auto generated Go binding around an Ethereum contract,
 // with pre-set call and transact options.
-type IBlobRefRegistrySession struct {
-	Contract     *IBlobRefRegistry // Generic contract binding to set the session for
+type BlobRefRegistrySession struct {
+	Contract     *BlobRefRegistry  // Generic contract binding to set the session for
 	CallOpts     bind.CallOpts     // Call options to use throughout this session
 	TransactOpts bind.TransactOpts // Transaction auth options to use throughout this session
 }
 
-// IBlobRefRegistryCallerSession is an auto generated read-only Go binding around an Ethereum contract,
+// BlobRefRegistryCallerSession is an auto generated read-only Go binding around an Ethereum contract,
 // with pre-set call options.
-type IBlobRefRegistryCallerSession struct {
-	Contract *IBlobRefRegistryCaller // Generic contract caller binding to set the session for
-	CallOpts bind.CallOpts           // Call options to use throughout this session
+type BlobRefRegistryCallerSession struct {
+	Contract *BlobRefRegistryCaller // Generic contract caller binding to set the session for
+	CallOpts bind.CallOpts          // Call options to use throughout this session
 }
 
-// IBlobRefRegistryTransactorSession is an auto generated write-only Go binding around an Ethereum contract,
+// BlobRefRegistryTransactorSession is an auto generated write-only Go binding around an Ethereum contract,
 // with pre-set transact options.
-type IBlobRefRegistryTransactorSession struct {
-	Contract     *IBlobRefRegistryTransactor // Generic contract transactor binding to set the session for
-	TransactOpts bind.TransactOpts           // Transaction auth options to use throughout this session
+type BlobRefRegistryTransactorSession struct {
+	Contract     *BlobRefRegistryTransactor // Generic contract transactor binding to set the session for
+	TransactOpts bind.TransactOpts          // Transaction auth options to use throughout this session
 }
 
-// IBlobRefRegistryRaw is an auto generated low-level Go binding around an Ethereum contract.
-type IBlobRefRegistryRaw struct {
-	Contract *IBlobRefRegistry // Generic contract binding to access the raw methods on
+// BlobRefRegistryRaw is an auto generated low-level Go binding around an Ethereum contract.
+type BlobRefRegistryRaw struct {
+	Contract *BlobRefRegistry // Generic contract binding to access the raw methods on
 }
 
-// IBlobRefRegistryCallerRaw is an auto generated low-level read-only Go binding around an Ethereum contract.
-type IBlobRefRegistryCallerRaw struct {
-	Contract *IBlobRefRegistryCaller // Generic read-only contract binding to access the raw methods on
+// BlobRefRegistryCallerRaw is an auto generated low-level read-only Go binding around an Ethereum contract.
+type BlobRefRegistryCallerRaw struct {
+	Contract *BlobRefRegistryCaller // Generic read-only contract binding to access the raw methods on
 }
 
-// IBlobRefRegistryTransactorRaw is an auto generated low-level write-only Go binding around an Ethereum contract.
-type IBlobRefRegistryTransactorRaw struct {
-	Contract *IBlobRefRegistryTransactor // Generic write-only contract binding to access the raw methods on
+// BlobRefRegistryTransactorRaw is an auto generated low-level write-only Go binding around an Ethereum contract.
+type BlobRefRegistryTransactorRaw struct {
+	Contract *BlobRefRegistryTransactor // Generic write-only contract binding to access the raw methods on
 }
 
-// NewIBlobRefRegistry creates a new instance of IBlobRefRegistry, bound to a specific deployed contract.
-func NewIBlobRefRegistry(address common.Address, backend bind.ContractBackend) (*IBlobRefRegistry, error) {
-	contract, err := bindIBlobRefRegistry(address, backend, backend, backend)
+// NewBlobRefRegistry creates a new instance of BlobRefRegistry, bound to a specific deployed contract.
+func NewBlobRefRegistry(address common.Address, backend bind.ContractBackend) (*BlobRefRegistry, error) {
+	contract, err := bindBlobRefRegistry(address, backend, backend, backend)
 	if err != nil {
 		return nil, err
 	}
-	return &IBlobRefRegistry{IBlobRefRegistryCaller: IBlobRefRegistryCaller{contract: contract}, IBlobRefRegistryTransactor: IBlobRefRegistryTransactor{contract: contract}, IBlobRefRegistryFilterer: IBlobRefRegistryFilterer{contract: contract}}, nil
+	return &BlobRefRegistry{BlobRefRegistryCaller: BlobRefRegistryCaller{contract: contract}, BlobRefRegistryTransactor: BlobRefRegistryTransactor{contract: contract}, BlobRefRegistryFilterer: BlobRefRegistryFilterer{contract: contract}}, nil
 }
 
-// NewIBlobRefRegistryCaller creates a new read-only instance of IBlobRefRegistry, bound to a specific deployed contract.
-func NewIBlobRefRegistryCaller(address common.Address, caller bind.ContractCaller) (*IBlobRefRegistryCaller, error) {
-	contract, err := bindIBlobRefRegistry(address, caller, nil, nil)
+// NewBlobRefRegistryCaller creates a new read-only instance of BlobRefRegistry, bound to a specific deployed contract.
+func NewBlobRefRegistryCaller(address common.Address, caller bind.ContractCaller) (*BlobRefRegistryCaller, error) {
+	contract, err := bindBlobRefRegistry(address, caller, nil, nil)
 	if err != nil {
 		return nil, err
 	}
-	return &IBlobRefRegistryCaller{contract: contract}, nil
+	return &BlobRefRegistryCaller{contract: contract}, nil
 }
 
-// NewIBlobRefRegistryTransactor creates a new write-only instance of IBlobRefRegistry, bound to a specific deployed contract.
-func NewIBlobRefRegistryTransactor(address common.Address, transactor bind.ContractTransactor) (*IBlobRefRegistryTransactor, error) {
-	contract, err := bindIBlobRefRegistry(address, nil, transactor, nil)
+// NewBlobRefRegistryTransactor creates a new write-only instance of BlobRefRegistry, bound to a specific deployed contract.
+func NewBlobRefRegistryTransactor(address common.Address, transactor bind.ContractTransactor) (*BlobRefRegistryTransactor, error) {
+	contract, err := bindBlobRefRegistry(address, nil, transactor, nil)
 	if err != nil {
 		return nil, err
 	}
-	return &IBlobRefRegistryTransactor{contract: contract}, nil
+	return &BlobRefRegistryTransactor{contract: contract}, nil
 }
 
-// NewIBlobRefRegistryFilterer creates a new log filterer instance of IBlobRefRegistry, bound to a specific deployed contract.
-func NewIBlobRefRegistryFilterer(address common.Address, filterer bind.ContractFilterer) (*IBlobRefRegistryFilterer, error) {
-	contract, err := bindIBlobRefRegistry(address, nil, nil, filterer)
+// NewBlobRefRegistryFilterer creates a new log filterer instance of BlobRefRegistry, bound to a specific deployed contract.
+func NewBlobRefRegistryFilterer(address common.Address, filterer bind.ContractFilterer) (*BlobRefRegistryFilterer, error) {
+	contract, err := bindBlobRefRegistry(address, nil, nil, filterer)
 	if err != nil {
 		return nil, err
 	}
-	return &IBlobRefRegistryFilterer{contract: contract}, nil
+	return &BlobRefRegistryFilterer{contract: contract}, nil
 }
 
-// bindIBlobRefRegistry binds a generic wrapper to an already deployed contract.
-func bindIBlobRefRegistry(address common.Address, caller bind.ContractCaller, transactor bind.ContractTransactor, filterer bind.ContractFilterer) (*bind.BoundContract, error) {
-	parsed, err := IBlobRefRegistryMetaData.GetAbi()
+// bindBlobRefRegistry binds a generic wrapper to an already deployed contract.
+func bindBlobRefRegistry(address common.Address, caller bind.ContractCaller, transactor bind.ContractTransactor, filterer bind.ContractFilterer) (*bind.BoundContract, error) {
+	parsed, err := BlobRefRegistryMetaData.GetAbi()
 	if err != nil {
 		return nil, err
 	}
@@ -152,46 +152,46 @@ func bindIBlobRefRegistry(address common.Address, caller bind.ContractCaller, tr
 // sets the output to result. The result type might be a single field for simple
 // returns, a slice of interfaces for anonymous returns and a struct for named
 // returns.
-func (_IBlobRefRegistry *IBlobRefRegistryRaw) Call(opts *bind.CallOpts, result *[]interface{}, method string, params ...interface{}) error {
-	return _IBlobRefRegistry.Contract.IBlobRefRegistryCaller.contract.Call(opts, result, method, params...)
+func (_BlobRefRegistry *BlobRefRegistryRaw) Call(opts *bind.CallOpts, result *[]interface{}, method string, params ...interface{}) error {
+	return _BlobRefRegistry.Contract.BlobRefRegistryCaller.contract.Call(opts, result, method, params...)
 }
 
 // Transfer initiates a plain transaction to move funds to the contract, calling
 // its default method if one is available.
-func (_IBlobRefRegistry *IBlobRefRegistryRaw) Transfer(opts *bind.TransactOpts) (*types.Transaction, error) {
-	return _IBlobRefRegistry.Contract.IBlobRefRegistryTransactor.contract.Transfer(opts)
+func (_BlobRefRegistry *BlobRefRegistryRaw) Transfer(opts *bind.TransactOpts) (*types.Transaction, error) {
+	return _BlobRefRegistry.Contract.BlobRefRegistryTransactor.contract.Transfer(opts)
 }
 
 // Transact invokes the (paid) contract method with params as input values.
-func (_IBlobRefRegistry *IBlobRefRegistryRaw) Transact(opts *bind.TransactOpts, method string, params ...interface{}) (*types.Transaction, error) {
-	return _IBlobRefRegistry.Contract.IBlobRefRegistryTransactor.contract.Transact(opts, method, params...)
+func (_BlobRefRegistry *BlobRefRegistryRaw) Transact(opts *bind.TransactOpts, method string, params ...interface{}) (*types.Transaction, error) {
+	return _BlobRefRegistry.Contract.BlobRefRegistryTransactor.contract.Transact(opts, method, params...)
 }
 
 // Call invokes the (constant) contract method with params as input values and
 // sets the output to result. The result type might be a single field for simple
 // returns, a slice of interfaces for anonymous returns and a struct for named
 // returns.
-func (_IBlobRefRegistry *IBlobRefRegistryCallerRaw) Call(opts *bind.CallOpts, result *[]interface{}, method string, params ...interface{}) error {
-	return _IBlobRefRegistry.Contract.contract.Call(opts, result, method, params...)
+func (_BlobRefRegistry *BlobRefRegistryCallerRaw) Call(opts *bind.CallOpts, result *[]interface{}, method string, params ...interface{}) error {
+	return _BlobRefRegistry.Contract.contract.Call(opts, result, method, params...)
 }
 
 // Transfer initiates a plain transaction to move funds to the contract, calling
 // its default method if one is available.
-func (_IBlobRefRegistry *IBlobRefRegistryTransactorRaw) Transfer(opts *bind.TransactOpts) (*types.Transaction, error) {
-	return _IBlobRefRegistry.Contract.contract.Transfer(opts)
+func (_BlobRefRegistry *BlobRefRegistryTransactorRaw) Transfer(opts *bind.TransactOpts) (*types.Transaction, error) {
+	return _BlobRefRegistry.Contract.contract.Transfer(opts)
 }
 
 // Transact invokes the (paid) contract method with params as input values.
-func (_IBlobRefRegistry *IBlobRefRegistryTransactorRaw) Transact(opts *bind.TransactOpts, method string, params ...interface{}) (*types.Transaction, error) {
-	return _IBlobRefRegistry.Contract.contract.Transact(opts, method, params...)
+func (_BlobRefRegistry *BlobRefRegistryTransactorRaw) Transact(opts *bind.TransactOpts, method string, params ...interface{}) (*types.Transaction, error) {
+	return _BlobRefRegistry.Contract.contract.Transact(opts, method, params...)
 }
 
 // GetRef is a free data retrieval call binding the contract method 0xfe56ee8d.
 //
 // Solidity: function getRef(uint256[] blobIndices) view returns((uint256,bytes32[]))
-func (_IBlobRefRegistry *IBlobRefRegistryCaller) GetRef(opts *bind.CallOpts, blobIndices []*big.Int) (IBlobRefRegistryBlobRef, error) {
+func (_BlobRefRegistry *BlobRefRegistryCaller) GetRef(opts *bind.CallOpts, blobIndices []*big.Int) (IBlobRefRegistryBlobRef, error) {
 	var out []interface{}
-	err := _IBlobRefRegistry.contract.Call(opts, &out, "getRef", blobIndices)
+	err := _BlobRefRegistry.contract.Call(opts, &out, "getRef", blobIndices)
 
 	if err != nil {
 		return *new(IBlobRefRegistryBlobRef), err
@@ -206,23 +206,23 @@ func (_IBlobRefRegistry *IBlobRefRegistryCaller) GetRef(opts *bind.CallOpts, blo
 // GetRef is a free data retrieval call binding the contract method 0xfe56ee8d.
 //
 // Solidity: function getRef(uint256[] blobIndices) view returns((uint256,bytes32[]))
-func (_IBlobRefRegistry *IBlobRefRegistrySession) GetRef(blobIndices []*big.Int) (IBlobRefRegistryBlobRef, error) {
-	return _IBlobRefRegistry.Contract.GetRef(&_IBlobRefRegistry.CallOpts, blobIndices)
+func (_BlobRefRegistry *BlobRefRegistrySession) GetRef(blobIndices []*big.Int) (IBlobRefRegistryBlobRef, error) {
+	return _BlobRefRegistry.Contract.GetRef(&_BlobRefRegistry.CallOpts, blobIndices)
 }
 
 // GetRef is a free data retrieval call binding the contract method 0xfe56ee8d.
 //
 // Solidity: function getRef(uint256[] blobIndices) view returns((uint256,bytes32[]))
-func (_IBlobRefRegistry *IBlobRefRegistryCallerSession) GetRef(blobIndices []*big.Int) (IBlobRefRegistryBlobRef, error) {
-	return _IBlobRefRegistry.Contract.GetRef(&_IBlobRefRegistry.CallOpts, blobIndices)
+func (_BlobRefRegistry *BlobRefRegistryCallerSession) GetRef(blobIndices []*big.Int) (IBlobRefRegistryBlobRef, error) {
+	return _BlobRefRegistry.Contract.GetRef(&_BlobRefRegistry.CallOpts, blobIndices)
 }
 
 // IsRefRegistered is a free data retrieval call binding the contract method 0x4f202962.
 //
 // Solidity: function isRefRegistered(bytes32 refHash) view returns(bool)
-func (_IBlobRefRegistry *IBlobRefRegistryCaller) IsRefRegistered(opts *bind.CallOpts, refHash [32]byte) (bool, error) {
+func (_BlobRefRegistry *BlobRefRegistryCaller) IsRefRegistered(opts *bind.CallOpts, refHash [32]byte) (bool, error) {
 	var out []interface{}
-	err := _IBlobRefRegistry.contract.Call(opts, &out, "isRefRegistered", refHash)
+	err := _BlobRefRegistry.contract.Call(opts, &out, "isRefRegistered", refHash)
 
 	if err != nil {
 		return *new(bool), err
@@ -237,41 +237,41 @@ func (_IBlobRefRegistry *IBlobRefRegistryCaller) IsRefRegistered(opts *bind.Call
 // IsRefRegistered is a free data retrieval call binding the contract method 0x4f202962.
 //
 // Solidity: function isRefRegistered(bytes32 refHash) view returns(bool)
-func (_IBlobRefRegistry *IBlobRefRegistrySession) IsRefRegistered(refHash [32]byte) (bool, error) {
-	return _IBlobRefRegistry.Contract.IsRefRegistered(&_IBlobRefRegistry.CallOpts, refHash)
+func (_BlobRefRegistry *BlobRefRegistrySession) IsRefRegistered(refHash [32]byte) (bool, error) {
+	return _BlobRefRegistry.Contract.IsRefRegistered(&_BlobRefRegistry.CallOpts, refHash)
 }
 
 // IsRefRegistered is a free data retrieval call binding the contract method 0x4f202962.
 //
 // Solidity: function isRefRegistered(bytes32 refHash) view returns(bool)
-func (_IBlobRefRegistry *IBlobRefRegistryCallerSession) IsRefRegistered(refHash [32]byte) (bool, error) {
-	return _IBlobRefRegistry.Contract.IsRefRegistered(&_IBlobRefRegistry.CallOpts, refHash)
+func (_BlobRefRegistry *BlobRefRegistryCallerSession) IsRefRegistered(refHash [32]byte) (bool, error) {
+	return _BlobRefRegistry.Contract.IsRefRegistered(&_BlobRefRegistry.CallOpts, refHash)
 }
 
 // RegisterRef is a paid mutator transaction binding the contract method 0x0fe0bf4f.
 //
 // Solidity: function registerRef(uint256[] blobIndices) returns(bytes32 refHash, (uint256,bytes32[]) ref)
-func (_IBlobRefRegistry *IBlobRefRegistryTransactor) RegisterRef(opts *bind.TransactOpts, blobIndices []*big.Int) (*types.Transaction, error) {
-	return _IBlobRefRegistry.contract.Transact(opts, "registerRef", blobIndices)
+func (_BlobRefRegistry *BlobRefRegistryTransactor) RegisterRef(opts *bind.TransactOpts, blobIndices []*big.Int) (*types.Transaction, error) {
+	return _BlobRefRegistry.contract.Transact(opts, "registerRef", blobIndices)
 }
 
 // RegisterRef is a paid mutator transaction binding the contract method 0x0fe0bf4f.
 //
 // Solidity: function registerRef(uint256[] blobIndices) returns(bytes32 refHash, (uint256,bytes32[]) ref)
-func (_IBlobRefRegistry *IBlobRefRegistrySession) RegisterRef(blobIndices []*big.Int) (*types.Transaction, error) {
-	return _IBlobRefRegistry.Contract.RegisterRef(&_IBlobRefRegistry.TransactOpts, blobIndices)
+func (_BlobRefRegistry *BlobRefRegistrySession) RegisterRef(blobIndices []*big.Int) (*types.Transaction, error) {
+	return _BlobRefRegistry.Contract.RegisterRef(&_BlobRefRegistry.TransactOpts, blobIndices)
 }
 
 // RegisterRef is a paid mutator transaction binding the contract method 0x0fe0bf4f.
 //
 // Solidity: function registerRef(uint256[] blobIndices) returns(bytes32 refHash, (uint256,bytes32[]) ref)
-func (_IBlobRefRegistry *IBlobRefRegistryTransactorSession) RegisterRef(blobIndices []*big.Int) (*types.Transaction, error) {
-	return _IBlobRefRegistry.Contract.RegisterRef(&_IBlobRefRegistry.TransactOpts, blobIndices)
+func (_BlobRefRegistry *BlobRefRegistryTransactorSession) RegisterRef(blobIndices []*big.Int) (*types.Transaction, error) {
+	return _BlobRefRegistry.Contract.RegisterRef(&_BlobRefRegistry.TransactOpts, blobIndices)
 }
 
-// IBlobRefRegistryRegisteredIterator is returned from FilterRegistered and is used to iterate over the raw logs and unpacked data for Registered events raised by the IBlobRefRegistry contract.
-type IBlobRefRegistryRegisteredIterator struct {
-	Event *IBlobRefRegistryRegistered // Event containing the contract specifics and raw log
+// BlobRefRegistryRegisteredIterator is returned from FilterRegistered and is used to iterate over the raw logs and unpacked data for Registered events raised by the BlobRefRegistry contract.
+type BlobRefRegistryRegisteredIterator struct {
+	Event *BlobRefRegistryRegistered // Event containing the contract specifics and raw log
 
 	contract *bind.BoundContract // Generic contract to use for unpacking event data
 	event    string              // Event name to use for unpacking event data
@@ -285,7 +285,7 @@ type IBlobRefRegistryRegisteredIterator struct {
 // Next advances the iterator to the subsequent event, returning whether there
 // are any more events found. In case of a retrieval or parsing error, false is
 // returned and Error() can be queried for the exact failure.
-func (it *IBlobRefRegistryRegisteredIterator) Next() bool {
+func (it *BlobRefRegistryRegisteredIterator) Next() bool {
 	// If the iterator failed, stop iterating
 	if it.fail != nil {
 		return false
@@ -294,7 +294,7 @@ func (it *IBlobRefRegistryRegisteredIterator) Next() bool {
 	if it.done {
 		select {
 		case log := <-it.logs:
-			it.Event = new(IBlobRefRegistryRegistered)
+			it.Event = new(BlobRefRegistryRegistered)
 			if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
 				it.fail = err
 				return false
@@ -309,7 +309,7 @@ func (it *IBlobRefRegistryRegisteredIterator) Next() bool {
 	// Iterator still in progress, wait for either a data or an error event
 	select {
 	case log := <-it.logs:
-		it.Event = new(IBlobRefRegistryRegistered)
+		it.Event = new(BlobRefRegistryRegistered)
 		if err := it.contract.UnpackLog(it.Event, it.event, log); err != nil {
 			it.fail = err
 			return false
@@ -325,19 +325,19 @@ func (it *IBlobRefRegistryRegisteredIterator) Next() bool {
 }
 
 // Error returns any retrieval or parsing error occurred during filtering.
-func (it *IBlobRefRegistryRegisteredIterator) Error() error {
+func (it *BlobRefRegistryRegisteredIterator) Error() error {
 	return it.fail
 }
 
 // Close terminates the iteration process, releasing any pending underlying
 // resources.
-func (it *IBlobRefRegistryRegisteredIterator) Close() error {
+func (it *BlobRefRegistryRegisteredIterator) Close() error {
 	it.sub.Unsubscribe()
 	return nil
 }
 
-// IBlobRefRegistryRegistered represents a Registered event raised by the IBlobRefRegistry contract.
-type IBlobRefRegistryRegistered struct {
+// BlobRefRegistryRegistered represents a Registered event raised by the BlobRefRegistry contract.
+type BlobRefRegistryRegistered struct {
 	RefHash [32]byte
 	Ref     IBlobRefRegistryBlobRef
 	Raw     types.Log // Blockchain specific contextual infos
@@ -346,31 +346,31 @@ type IBlobRefRegistryRegistered struct {
 // FilterRegistered is a free log retrieval operation binding the contract event 0xed198782f987144c59354d8218a3d68b5bc3c98d665723a6932495218ccba366.
 //
 // Solidity: event Registered(bytes32 indexed refHash, (uint256,bytes32[]) ref)
-func (_IBlobRefRegistry *IBlobRefRegistryFilterer) FilterRegistered(opts *bind.FilterOpts, refHash [][32]byte) (*IBlobRefRegistryRegisteredIterator, error) {
+func (_BlobRefRegistry *BlobRefRegistryFilterer) FilterRegistered(opts *bind.FilterOpts, refHash [][32]byte) (*BlobRefRegistryRegisteredIterator, error) {
 
 	var refHashRule []interface{}
 	for _, refHashItem := range refHash {
 		refHashRule = append(refHashRule, refHashItem)
 	}
 
-	logs, sub, err := _IBlobRefRegistry.contract.FilterLogs(opts, "Registered", refHashRule)
+	logs, sub, err := _BlobRefRegistry.contract.FilterLogs(opts, "Registered", refHashRule)
 	if err != nil {
 		return nil, err
 	}
-	return &IBlobRefRegistryRegisteredIterator{contract: _IBlobRefRegistry.contract, event: "Registered", logs: logs, sub: sub}, nil
+	return &BlobRefRegistryRegisteredIterator{contract: _BlobRefRegistry.contract, event: "Registered", logs: logs, sub: sub}, nil
 }
 
 // WatchRegistered is a free log subscription operation binding the contract event 0xed198782f987144c59354d8218a3d68b5bc3c98d665723a6932495218ccba366.
 //
 // Solidity: event Registered(bytes32 indexed refHash, (uint256,bytes32[]) ref)
-func (_IBlobRefRegistry *IBlobRefRegistryFilterer) WatchRegistered(opts *bind.WatchOpts, sink chan<- *IBlobRefRegistryRegistered, refHash [][32]byte) (event.Subscription, error) {
+func (_BlobRefRegistry *BlobRefRegistryFilterer) WatchRegistered(opts *bind.WatchOpts, sink chan<- *BlobRefRegistryRegistered, refHash [][32]byte) (event.Subscription, error) {
 
 	var refHashRule []interface{}
 	for _, refHashItem := range refHash {
 		refHashRule = append(refHashRule, refHashItem)
 	}
 
-	logs, sub, err := _IBlobRefRegistry.contract.WatchLogs(opts, "Registered", refHashRule)
+	logs, sub, err := _BlobRefRegistry.contract.WatchLogs(opts, "Registered", refHashRule)
 	if err != nil {
 		return nil, err
 	}
@@ -380,8 +380,8 @@ func (_IBlobRefRegistry *IBlobRefRegistryFilterer) WatchRegistered(opts *bind.Wa
 			select {
 			case log := <-logs:
 				// New log arrived, parse the event and forward to the user
-				event := new(IBlobRefRegistryRegistered)
-				if err := _IBlobRefRegistry.contract.UnpackLog(event, "Registered", log); err != nil {
+				event := new(BlobRefRegistryRegistered)
+				if err := _BlobRefRegistry.contract.UnpackLog(event, "Registered", log); err != nil {
 					return err
 				}
 				event.Raw = log
@@ -405,9 +405,9 @@ func (_IBlobRefRegistry *IBlobRefRegistryFilterer) WatchRegistered(opts *bind.Wa
 // ParseRegistered is a log parse operation binding the contract event 0xed198782f987144c59354d8218a3d68b5bc3c98d665723a6932495218ccba366.
 //
 // Solidity: event Registered(bytes32 indexed refHash, (uint256,bytes32[]) ref)
-func (_IBlobRefRegistry *IBlobRefRegistryFilterer) ParseRegistered(log types.Log) (*IBlobRefRegistryRegistered, error) {
-	event := new(IBlobRefRegistryRegistered)
-	if err := _IBlobRefRegistry.contract.UnpackLog(event, "Registered", log); err != nil {
+func (_BlobRefRegistry *BlobRefRegistryFilterer) ParseRegistered(log types.Log) (*BlobRefRegistryRegistered, error) {
+	event := new(BlobRefRegistryRegistered)
+	if err := _BlobRefRegistry.contract.UnpackLog(event, "Registered", log); err != nil {
 		return nil, err
 	}
 	event.Raw = log

@@ -16,8 +16,8 @@ cd ${TAIKO_GETH_DIR} &&
   cd -
 
 cd ../contracts &&
-  just clean &&
-  just compile &&
+  make clean &&
+  make compile &&
   cd -
 
 ABIGEN_BIN=$TAIKO_GETH_DIR/build/bin/abigen
@@ -29,30 +29,26 @@ echo ""
 
 mkdir -p $DIR/../bindings/${PACKAGE_NAME}
 
-INTERFACES=$(find ../contracts/src/protocol -name "I*.sol" -type f -exec basename {} .sol \;)
+CONTRACTS=../contracts/out/
 
-for interface in $INTERFACES; do
-  echo "Processing $interface..."
-
-  JSON_FILES=$(find ../contracts/out/${interface}.sol -name "*.json" -type f)
-
-  for json_file in $JSON_FILES; do
-    contract_name=$(basename "$json_file" .json)
-
-    echo "  Generating bindings for $contract_name..."
-
-    output_name=$(echo ${contract_name#I} | tr '[:upper:]' '[:lower:]')
-
-    cat "$json_file" |
-      jq .abi |
-      ${ABIGEN_BIN} --abi - --type ${contract_name} --pkg ${PACKAGE_NAME} --out $DIR/../bindings/${PACKAGE_NAME}/gen_${output_name}.go
-  done
-done
-
-
-# this one is not found in src/protocol
-cat ../contracts/out/IBlobRefRegistry.sol/IBlobRefRegistry.json |
+echo "Generating bindings for TaikoInbox..."
+cat $CONTRACTS/TaikoInbox.sol/TaikoInbox.json |
 	jq .abi |
-	${ABIGEN_BIN} --abi - --type IBlobRefRegistry --pkg ${PACKAGE_NAME} --out $DIR/../bindings/${PACKAGE_NAME}/gen_blob_ref_registry.go
+	${ABIGEN_BIN} --abi - --type TaikoInbox --pkg ${PACKAGE_NAME} --out $DIR/../bindings/${PACKAGE_NAME}/gen_inbox.go
+
+echo "Generating bindings for CheckpointTracker..."
+cat $CONTRACTS/CheckpointTracker.sol/CheckpointTracker.json |
+  jq .abi |
+  ${ABIGEN_BIN} --abi - --type CheckpointTracker --pkg ${PACKAGE_NAME} --out $DIR/../bindings/${PACKAGE_NAME}/gen_checkpoint_tracker.go
+
+echo "Generating bindings for DelayedInclusionStore..."
+cat $CONTRACTS/DelayedInclusionStore.sol/DelayedInclusionStore.json |
+  jq .abi |
+  ${ABIGEN_BIN} --abi - --type DelayedInclusionStore --pkg ${PACKAGE_NAME} --out $DIR/../bindings/${PACKAGE_NAME}/gen_delayed_inclusion_store.go
+
+echo "Generating bindings for BlobRefRegistry..."
+cat ../contracts/out/BlobRefRegistry.sol/BlobRefRegistry.json |
+	jq .abi |
+	${ABIGEN_BIN} --abi - --type BlobRefRegistry --pkg ${PACKAGE_NAME} --out $DIR/../bindings/${PACKAGE_NAME}/gen_blob_ref_registry.go
 
 echo "🍻 Go contract bindings for minimal-rollup interfaces generated!"
