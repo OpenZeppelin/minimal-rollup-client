@@ -1,6 +1,3 @@
 [submodule "contracts"]
 	path = contracts
 	url = git@github.com:OpenZeppelin/minimal-rollup.git
-[submodule "minimal-rollup"]
-	path = minimal-rollup
-	url = git@github.com:OpenZeppelin/minimal-rollup.git
